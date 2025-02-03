@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        /*heder/////////////////////////////////*/
+        .header {
+            display: flex;
+            justify-content: end;
+            margin-inline: 20px;
+            margin-top: 20px;
+
+            .gmail, .images, .sign-in-button{
+                display:flex;
+                align-items: center;
+            }
+        }
+
+        .header div {
+            margin-right: 10px;
+        }
+
+        .header .gmail p a, .header .images p a {
+            text-decoration: none;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .sign-in {
+            background-color: #0f63c1;
+            color: white;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+            width: 80px;
+            height: 35px;
+        }
+
+        .sign-in a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+
+    /*    content////////////////////////////////////*/
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .google-img-logo{
+            margin-bottom: 15px;
+            &>img{
+                width: 273px;
+                height: 92px;
+            }
+        }
+        .search-box{
+            position: relative;
+        }
+        .search-box>form .material-symbols-outlined{
+            color: #9aa0a6;
+            position: absolute;
+            left: 10px;
+            top: 11px;
+                font-variation-settings:
+                        'FILL' 0,
+                        'wght' 400,
+                        'GRAD' 0,
+                        'opsz' 24
+        }
+        .search-box>form .material-symbols-outlined-mic mic{
+            color: red;
+            font-variation-settings:
+                    'FILL' 0,
+                    'wght' 400,
+                    'GRAD' 0,
+                    'opsz' 24
+        }
+        #search-input{
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            width: 460px;
+            height: 44px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 1px 1px 9px 0px gray;
+
+        }
+        .search-button{
+            margin-bottom: 20px;
+        }
+        .btn-search, .btn-feeling-lucky{
+            background-color: #e9eeef;
+            border: none;
+            border-radius: 5px;
+            width: 120px;
+            height: 30px;
+            color: #272626;
+        }
+        .language{
+            display: flex;
+            flex-direction: row;
+            p{
+              margin-right: 20px;
+            }
+        }
+
+    /*    footer///////////////*/
+        .lanka{
+            margin: 10px 20px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            background-color: #e1e4e4;
+            margin-top: auto;
+            p > a{
+                color: black;
+                text-decoration: none;
+                font-size: 15px;
+            }
+        }
+        .footer-content{
+            display: flex;
+            flex-direction: row;
+            margin: 10px 20px;
+            justify-content: space-between;
+        }
+        .footer-left-content, .footer-right-content{
+            display: flex;
+            a{
+                margin-inline: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<!--        /////////header-->
+        <div class="header">
+            <div class="gmail">
+                <p><a href="https://mail.google.com/mail/&ogbl">Gmail</a></p>
+            </div>
+            <div class="images">
+                <p><a href="https://www.google.com/imghp?hl=en&ogbl">Images</a></p>
+            </div>
+            <div class="google-app">
+                <img src="img/google-app-icon.png" alt="Google-app">
+            </div>
+            <div class="sign-in-button">
+                <button class="sign-in"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">
+                    Sign in
+                </a>
+                </button>
+            </div>
+        </div>
+
+<!--        //////////////content-->
+        <div class="content">
+            <div class="google-img-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+            </div>
+            <div class="search-box">
+                <form>
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <span class="material-symbols-outlined mic">
+                        mic
+                    </span>
+                    <input type="text" id="search-input" placeholder="">
+                </form>
+            </div>
+            <div class="search-button">
+                <button class="btn-search">
+                    Google-Search
+                </button>
+                <button class="btn-feeling-lucky">
+                    I'm Feeling Lucky
+                </button>
+            </div>
+            <div class="language">
+                <p>Google offered in: </p>
+                <p><a href="https://www.google.com/setprefs?sig=0_5tpKvi6uaVNQY2Ovt00JFJao038%3D&hl=si&source=homepage&sa=X&ved=0ahUKEwimstDK0puLAxXdxTgGHVlWJ3MQ2ZgBCBY">සිංහල</a>
+                </p>
+                <p><a href="https://www.google.com/setprefs?sig=0_5tpKvi6uaVNQY2Ovt00JFJao038%3D&hl=ta&source=homepage&sa=X&ved=0ahUKEwimstDK0puLAxXdxTgGHVlWJ3MQ2ZgBCBc">தமிழ்</a>
+                </p>
+            </div>
+        </div>
+
+<!--        ////////////footer-->
+        <div class="footer">
+            <p class="lanka">Sri Lanka</p>
+            <hr>
+            <div class="footer-content">
+                <div class="footer-left-content">
+                    <p><a href="">About</a></p>
+                    <p><a href="">Advertising</a></p>
+                    <p><a href="">Business</a></p>
+                    <p><a href="">How Search works</a></p>
+                </div>
+                <br>
+                <div class="footer-right-content">
+                    <p><a href="">Privacy</a></p>
+                    <p><a href="">Terms</a></p>
+                    <p><a href="">Settings</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
